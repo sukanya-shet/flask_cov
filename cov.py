@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     d={}
     covid = Covid()
-    country_name = request.args['Country']
+    country_name = 'India'
     cases = covid.get_status_by_country_name(country_name)
     d[country_name] =cases['confirmed']
     return jsonify(d)
