@@ -8,7 +8,7 @@ def home():
     return('<em><b>Hello world!</b></em>')
 
 
-#@app.route('/Covid', methods=['GET'])
+@app.route('/Covid', methods=['GET'])
 def details():
     d = {}
     covid = Covid()
